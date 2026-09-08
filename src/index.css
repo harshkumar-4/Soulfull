@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    overscroll-behavior: none;
+    background-color: #fff8f5;
+    color: #1f1b18;
+  }
+}
+
+/* Custom scrollbar behavior */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f6ece7;
+}
+::-webkit-scrollbar-thumb {
+  background: #807479;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #704f62;
+}

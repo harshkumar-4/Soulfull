@@ -100,14 +100,13 @@ export default function HeaderNav({ onOpenMobileMenu }) {
             <span className="material-symbols-outlined text-on-primary text-[18px]">person</span>
           </Link>
 
-          {/* Mobile & Tablet Menu Button (Visible on < 1024px) */}
+          {/* Mobile & Tablet 3-Line Hamburger Button (Visible on < 1024px) */}
           <button
             onClick={onOpenMobileMenu}
-            className="lg:hidden inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#FFF8F5] border border-[#E8E2DA] text-[#57384A] font-medium text-[12px] uppercase tracking-wider hover:bg-[#FAF7F2] transition-colors shadow-2xs"
-            aria-label="Open Sanctuary Menu"
+            className="lg:hidden w-10 h-10 rounded-full bg-[#FFF8F5] border border-[#E8E2DA] flex items-center justify-center text-[#57384A] hover:bg-[#FAF7F2] transition-colors shadow-2xs"
+            aria-label="Open Navigation Menu"
           >
-            <span className="material-symbols-outlined text-[20px]">menu</span>
-            <span className="font-sans font-semibold">Menu</span>
+            <span className="material-symbols-outlined text-[24px]">menu</span>
           </button>
         </div>
 

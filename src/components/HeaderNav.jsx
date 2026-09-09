@@ -31,8 +31,8 @@ export default function HeaderNav({ onOpenMobileMenu }) {
           </Link>
         </div>
 
-        {/* Desktop Navigation Links */}
-        <nav className="hidden xl:flex items-center gap-space-lg">
+        {/* Desktop Navigation Links (Visible on 1024px+) */}
+        <nav className="hidden lg:flex items-center gap-space-md xl:gap-space-lg">
           <Link
             to="/"
             className={`font-body-sm text-[14px] transition-colors tracking-wide ${
@@ -76,7 +76,7 @@ export default function HeaderNav({ onOpenMobileMenu }) {
         </nav>
 
         {/* Right Action Controls */}
-        <div className="flex items-center gap-space-md shrink-0">
+        <div className="flex items-center gap-space-sm sm:gap-space-md shrink-0">
           <Link
             to="/join-community"
             className="hidden sm:inline-block font-body-sm text-body-sm text-charcoal-muted hover:text-charcoal transition-colors tracking-wide px-2"
@@ -86,7 +86,7 @@ export default function HeaderNav({ onOpenMobileMenu }) {
           
           <Link
             to="/eq-audit/assessment"
-            className="inline-flex items-center justify-center rounded-full bg-primary-container px-space-lg py-2.5 font-body-sm text-body-sm font-medium text-on-primary shadow-[0_4px_16px_rgba(87,56,74,0.18)] hover:bg-primary transition-all duration-300 transform hover:-translate-y-0.5"
+            className="hidden xs:inline-flex items-center justify-center rounded-full bg-primary-container px-3.5 sm:px-space-lg py-2 sm:py-2.5 font-body-sm text-[12px] sm:text-body-sm font-medium text-on-primary shadow-[0_4px_16px_rgba(87,56,74,0.18)] hover:bg-primary transition-all duration-300 transform hover:-translate-y-0.5"
           >
             Begin Practice
           </Link>
@@ -100,13 +100,14 @@ export default function HeaderNav({ onOpenMobileMenu }) {
             <span className="material-symbols-outlined text-on-primary text-[18px]">person</span>
           </Link>
 
-          {/* Mobile Menu Hamburger */}
+          {/* Mobile & Tablet Menu Button (Visible on < 1024px) */}
           <button
             onClick={onOpenMobileMenu}
-            className="xl:hidden p-2 rounded-full text-charcoal hover:bg-surface-container transition-colors"
-            aria-label="Open Mobile Menu"
+            className="lg:hidden inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#FFF8F5] border border-[#E8E2DA] text-[#57384A] font-medium text-[12px] uppercase tracking-wider hover:bg-[#FAF7F2] transition-colors shadow-2xs"
+            aria-label="Open Sanctuary Menu"
           >
-            <span className="material-symbols-outlined text-[24px]">menu</span>
+            <span className="material-symbols-outlined text-[20px]">menu</span>
+            <span className="font-sans font-semibold">Menu</span>
           </button>
         </div>
 

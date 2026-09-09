@@ -38,7 +38,7 @@ export default function MobileNavDrawer({ isOpen, onClose }) {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex justify-end bg-on-surface/40 backdrop-blur-sm transition-opacity duration-300">
+    <div className="fixed inset-0 z-[100] flex justify-end bg-on-surface/50 backdrop-blur-sm transition-opacity duration-300">
       {/* Backdrop click to close */}
       <div className="absolute inset-0" onClick={onClose} />
 

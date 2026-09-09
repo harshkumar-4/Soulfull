@@ -17,7 +17,7 @@ export default function WatercolorBackground({ children, className = '' }) {
       {/* Single Primary Hero Watercolor Artwork Background Layer */}
       <div
         aria-hidden="true"
-        className="absolute top-0 left-0 right-0 h-[650px] sm:h-[850px] lg:h-[1050px] pointer-events-none -z-20 bg-[url('/assets/soulfuli-hero-watercolor.png')] bg-cover bg-center sm:bg-top bg-no-repeat opacity-95"
+        className="absolute top-0 left-0 right-0 h-[650px] sm:h-[850px] lg:h-[1050px] pointer-events-none -z-20 bg-[url('/assets/soulfuli-hero.jpg')] bg-cover bg-center sm:bg-top bg-no-repeat opacity-95"
       />
 
       {/* Soft Bottom Fade for Seamless Transition into Lower Page */}

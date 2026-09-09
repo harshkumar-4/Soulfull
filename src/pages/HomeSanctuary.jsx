@@ -47,17 +47,17 @@ export default function HomeSanctuary() {
   return (
     <WatercolorBackground className="min-h-screen pt-20 flex flex-col">
       <div className="w-full max-w-max-width-canvas mx-auto px-gutter-mobile lg:px-gutter-desktop space-y-space-3xl pb-space-3xl">
-        
+
         {/* --------------------------------------------------
             1. HERO SECTION (Matching Reference Composition)
         -------------------------------------------------- */}
         <section className="relative w-full rounded-2xl sm:rounded-[2.2rem] lg:rounded-[2.5rem] bg-[#FFF8F5]/40 p-4 sm:p-8 lg:p-12 mt-2 sm:mt-4 border border-[#E8E2DA]/50 backdrop-blur-[2px] overflow-hidden shadow-2xs">
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center relative z-10">
-            
+
             {/* Left Column: Editorial Headline & Actions */}
             <div className="lg:col-span-7 space-y-4 sm:space-y-6 text-left">
-              
+
               {/* Editorial Eyebrow Tag */}
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FBF1F5]/90 text-[#704F62] font-label-sm text-[10px] sm:text-[11px] tracking-widest uppercase border border-[#D8C4D9]/60 shadow-2xs backdrop-blur-xs">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#704F62] inline-block animate-pulse"></span>
@@ -97,15 +97,14 @@ export default function HomeSanctuary() {
 
             {/* Right Column: Breathwork Widget */}
             <div className="lg:col-span-5 flex flex-col items-center justify-center pt-4 lg:pt-0 relative">
-              
+
               {/* Editorial Breathwork Card */}
               <div className="relative w-full max-w-sm p-5 sm:p-7 rounded-2xl sm:rounded-3xl bg-[#FFF8F5]/90 border border-[#E8E2DA]/90 shadow-xs backdrop-blur-xs flex flex-col items-center text-center space-y-4">
-                
+
                 {/* Soft Glowing Outer Ring */}
                 <div className="relative w-32 h-32 sm:w-40 sm:h-40 rounded-full flex items-center justify-center bg-gradient-to-br from-[#F5F1FB] via-[#FBF1F5] to-[#FFF8F5] p-1 border border-[#E8E2DA]/80 shadow-2xs">
-                  <div className={`w-full h-full rounded-full bg-[#FAF7F2] flex flex-col items-center justify-center p-3 sm:p-4 transition-transform duration-1000 ${
-                    breatheState === 'inhale' ? 'scale-110 bg-[#FBF1F5]' : breatheState === 'hold' ? 'scale-105 bg-[#F5F1FB]' : 'scale-100'
-                  }`}>
+                  <div className={`w-full h-full rounded-full bg-[#FAF7F2] flex flex-col items-center justify-center p-3 sm:p-4 transition-transform duration-1000 ${breatheState === 'inhale' ? 'scale-110 bg-[#FBF1F5]' : breatheState === 'hold' ? 'scale-105 bg-[#F5F1FB]' : 'scale-100'
+                    }`}>
                     <span className="material-symbols-outlined text-[#704F62] text-[28px] sm:text-[32px] mb-1">air</span>
                     <span className="font-label-sm text-[10px] sm:text-[11px] uppercase tracking-widest text-[#704F62] font-semibold">
                       {breatheState === 'idle' && 'Focus'}
@@ -127,11 +126,10 @@ export default function HomeSanctuary() {
                 <button
                   onClick={startBreathing}
                   disabled={breatheState !== 'idle'}
-                  className={`w-full py-3 rounded-full font-label-md text-[11px] sm:text-[12px] uppercase tracking-wider transition-all duration-300 ${
-                    breatheState !== 'idle'
-                      ? 'bg-[#FBF1F5] text-[#704F62] opacity-80 cursor-wait'
-                      : 'bg-[#57384A] text-white hover:bg-[#704F62] shadow-2xs'
-                  }`}
+                  className={`w-full py-3 rounded-full font-label-md text-[11px] sm:text-[12px] uppercase tracking-wider transition-all duration-300 ${breatheState !== 'idle'
+                    ? 'bg-[#FBF1F5] text-[#704F62] opacity-80 cursor-wait'
+                    : 'bg-[#57384A] text-white hover:bg-[#704F62] shadow-2xs'
+                    }`}
                 >
                   {breatheState === 'idle' ? 'One Conscious Breath' : 'Breathing in Progress...'}
                 </button>
@@ -147,7 +145,7 @@ export default function HomeSanctuary() {
             2. FOUR PRACTICE CARDS (1 Row Desktop, 2x2 Tablet, 1 Col Mobile)
         -------------------------------------------------- */}
         <section className="space-y-space-md">
-          
+
           <div className="flex items-end justify-between px-space-2xs">
             <div>
               <span className="font-label-sm text-label-sm uppercase tracking-widest text-[#4E4449] font-semibold">Pillars of Stillness</span>
@@ -162,7 +160,7 @@ export default function HomeSanctuary() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
-            
+
             {/* Card 1: Emotional Intelligence */}
             <div className="rounded-3xl bg-[#FFF8F5]/90 p-space-lg border border-[#E8E2DA] shadow-2xs flex flex-col justify-between hover:shadow-xs transition-shadow group">
               <div className="space-y-space-sm">
@@ -259,7 +257,7 @@ export default function HomeSanctuary() {
             3. EMERSON QUOTE SECTION (Editorial Magazine Style)
         -------------------------------------------------- */}
         <section className="relative my-space-2xl py-space-3xl px-space-lg rounded-[2.5rem] bg-gradient-to-r from-[#FBF1F5]/70 via-[#FFF8F5] to-[#F5F1FB]/70 border border-[#E8E2DA] text-center shadow-2xs overflow-hidden">
-          
+
           <div className="absolute top-4 left-1/2 -translate-x-1/2 opacity-10 select-none pointer-events-none text-[#57384A] font-serif text-[180px] leading-none">
             “
           </div>
@@ -284,9 +282,9 @@ export default function HomeSanctuary() {
             4. PHILOSOPHY SECTION WITH IMAGE (MUST STAY)
         -------------------------------------------------- */}
         <section className="my-space-2xl p-space-lg sm:p-space-2xl rounded-[2.5rem] bg-[#FFF8F5]/95 border border-[#E8E2DA] shadow-xs">
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-center">
-            
+
             {/* Left Column: Philosophy Statement & Copy */}
             <div className="lg:col-span-7 space-y-space-md text-left">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FBF1F5] text-[#704F62] font-label-sm text-[11px] uppercase tracking-widest border border-[#704F62]/20">
@@ -316,7 +314,7 @@ export default function HomeSanctuary() {
             {/* Right Column: Editorial Still-Life Image with Layered Framing */}
             <div className="lg:col-span-5 flex justify-center">
               <div className="relative w-full max-w-md">
-                
+
                 {/* Background Layer Frame */}
                 <div className="absolute -inset-3 rounded-[2.2rem] bg-gradient-to-tr from-[#F5F1FB] via-[#FBF1F5] to-[#FFF8F5] border border-[#E8E2DA] -rotate-1 opacity-80 pointer-events-none" />
 
@@ -346,7 +344,7 @@ export default function HomeSanctuary() {
             5. NEWSLETTER / INNER CIRCLE (Soft Lavender/Blush Band)
         -------------------------------------------------- */}
         <section className="w-full rounded-[2.5rem] bg-gradient-to-b from-[#FBF1F5] via-[#F8EDEE] to-[#EAE1F5]/40 p-space-lg sm:p-space-2xl text-center flex flex-col items-center shadow-xs border border-[#E8E2DA] relative overflow-hidden">
-          
+
           <div className="w-12 h-12 rounded-full bg-[#FFF8F5] flex items-center justify-center mb-space-sm shadow-2xs text-[#57384A] border border-[#E8E2DA]/60">
             <span className="material-symbols-outlined text-[22px]">mark_email_unread</span>
           </div>

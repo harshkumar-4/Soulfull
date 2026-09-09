@@ -51,34 +51,34 @@ export default function HomeSanctuary() {
         {/* --------------------------------------------------
             1. HERO SECTION (Matching Reference Composition)
         -------------------------------------------------- */}
-        <section className="relative w-full rounded-[2.2rem] lg:rounded-[2.5rem] bg-[#FFF8F5]/30 p-space-lg sm:p-space-2xl mt-space-xs border border-[#E8E2DA]/40 backdrop-blur-[2px] overflow-hidden shadow-2xs">
+        <section className="relative w-full rounded-2xl sm:rounded-[2.2rem] lg:rounded-[2.5rem] bg-[#FFF8F5]/40 p-4 sm:p-8 lg:p-12 mt-2 sm:mt-4 border border-[#E8E2DA]/50 backdrop-blur-[2px] overflow-hidden shadow-2xs">
           
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-center relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center relative z-10">
             
             {/* Left Column: Editorial Headline & Actions */}
-            <div className="lg:col-span-7 space-y-space-md text-left">
+            <div className="lg:col-span-7 space-y-4 sm:space-y-6 text-left">
               
               {/* Editorial Eyebrow Tag */}
-              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#FBF1F5]/80 text-[#704F62] font-label-sm text-[11px] tracking-widest uppercase border border-[#D8C4D9]/60 shadow-2xs backdrop-blur-xs">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FBF1F5]/90 text-[#704F62] font-label-sm text-[10px] sm:text-[11px] tracking-widest uppercase border border-[#D8C4D9]/60 shadow-2xs backdrop-blur-xs">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#704F62] inline-block animate-pulse"></span>
                 <span>Issue Nº 14 · Morning Edition</span>
               </div>
 
               {/* Main Editorial Headline */}
-              <h1 className="font-headline-lg-mobile lg:font-headline-lg text-[36px] sm:text-[46px] lg:text-[56px] text-[#1F1B18] tracking-tight leading-[1.12] font-serif font-normal">
+              <h1 className="text-[28px] xs:text-[34px] sm:text-[44px] lg:text-[54px] text-[#1F1B18] tracking-tight leading-[1.15] font-serif font-normal">
                 Return to what is <span className="italic font-normal text-[#704F62]">quiet</span> within you.
               </h1>
 
               {/* Supporting Paragraph */}
-              <p className="font-body-md text-body-md text-[#4E4449] leading-relaxed max-w-xl font-sans text-[15px] sm:text-[16px]">
+              <p className="font-body-md text-[#4E4449] leading-relaxed max-w-xl font-sans text-[14px] sm:text-[16px]">
                 Cultivating emotional clarity, grounded presence, and conscious inner stillness in a hurried world.
               </p>
 
               {/* Primary & Secondary Actions */}
-              <div className="pt-space-xs flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm">
+              <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
                 <Link
                   to="/eq-audit/assessment"
-                  className="inline-flex items-center justify-center h-12 px-space-xl rounded-full bg-[#57384A] text-white font-label-md text-[13px] tracking-wider uppercase font-medium shadow-[0_6px_20px_rgba(87,56,74,0.25)] hover:bg-[#704F62] transition-all duration-300 transform active:scale-[0.98]"
+                  className="inline-flex items-center justify-center h-12 px-6 rounded-full bg-[#57384A] text-white font-label-md text-[12px] sm:text-[13px] tracking-wider uppercase font-medium shadow-[0_6px_20px_rgba(87,56,74,0.25)] hover:bg-[#704F62] transition-all duration-300 transform active:scale-[0.98] text-center"
                 >
                   <span className="material-symbols-outlined text-[18px] mr-2">energy_savings_leaf</span>
                   Begin Your Practice
@@ -86,7 +86,7 @@ export default function HomeSanctuary() {
 
                 <Link
                   to="/our-story"
-                  className="inline-flex items-center justify-center h-12 px-space-lg rounded-full bg-[#FFF8F5]/90 text-[#57384A] font-label-md text-[13px] tracking-wider uppercase font-medium border border-[#E8E2DA] hover:bg-[#FAF7F2] transition-colors duration-300 shadow-2xs backdrop-blur-xs"
+                  className="inline-flex items-center justify-center h-12 px-6 rounded-full bg-[#FFF8F5]/90 text-[#57384A] font-label-md text-[12px] sm:text-[13px] tracking-wider uppercase font-medium border border-[#E8E2DA] hover:bg-[#FAF7F2] transition-colors duration-300 shadow-2xs backdrop-blur-xs text-center"
                 >
                   <span className="material-symbols-outlined text-[18px] mr-1.5 text-[#704F62]">play_circle</span>
                   Watch Our Story
@@ -95,26 +95,19 @@ export default function HomeSanctuary() {
 
             </div>
 
-            {/* Right Column: Breathwork Widget + Script Accent Lettering */}
-            <div className="lg:col-span-5 flex flex-col items-center justify-center pt-space-md lg:pt-0 relative">
+            {/* Right Column: Breathwork Widget */}
+            <div className="lg:col-span-5 flex flex-col items-center justify-center pt-4 lg:pt-0 relative">
               
-              {/* Reference Script Lettering Accent */}
-              <div className="hidden sm:block absolute -top-10 -right-2 text-right pointer-events-none opacity-90">
-                <p className="font-serif italic text-[24px] lg:text-[28px] text-[#704F62] leading-tight select-none">
-                  More Presence<br />More Possibility
-                </p>
-              </div>
-
               {/* Editorial Breathwork Card */}
-              <div className="relative w-full max-w-sm p-space-xl rounded-3xl bg-[#FFF8F5]/85 border border-[#E8E2DA]/80 shadow-xs backdrop-blur-xs flex flex-col items-center text-center space-y-space-md">
+              <div className="relative w-full max-w-sm p-5 sm:p-7 rounded-2xl sm:rounded-3xl bg-[#FFF8F5]/90 border border-[#E8E2DA]/90 shadow-xs backdrop-blur-xs flex flex-col items-center text-center space-y-4">
                 
                 {/* Soft Glowing Outer Ring */}
-                <div className="relative w-36 h-36 sm:w-40 sm:h-40 rounded-full flex items-center justify-center bg-gradient-to-br from-[#F5F1FB] via-[#FBF1F5] to-[#FFF8F5] p-1 border border-[#E8E2DA]/80 shadow-2xs">
-                  <div className={`w-full h-full rounded-full bg-[#FAF7F2] flex flex-col items-center justify-center p-4 transition-transform duration-1000 ${
+                <div className="relative w-32 h-32 sm:w-40 sm:h-40 rounded-full flex items-center justify-center bg-gradient-to-br from-[#F5F1FB] via-[#FBF1F5] to-[#FFF8F5] p-1 border border-[#E8E2DA]/80 shadow-2xs">
+                  <div className={`w-full h-full rounded-full bg-[#FAF7F2] flex flex-col items-center justify-center p-3 sm:p-4 transition-transform duration-1000 ${
                     breatheState === 'inhale' ? 'scale-110 bg-[#FBF1F5]' : breatheState === 'hold' ? 'scale-105 bg-[#F5F1FB]' : 'scale-100'
                   }`}>
-                    <span className="material-symbols-outlined text-[#704F62] text-[32px] mb-1">air</span>
-                    <span className="font-label-sm text-[11px] uppercase tracking-widest text-[#704F62] font-semibold">
+                    <span className="material-symbols-outlined text-[#704F62] text-[28px] sm:text-[32px] mb-1">air</span>
+                    <span className="font-label-sm text-[10px] sm:text-[11px] uppercase tracking-widest text-[#704F62] font-semibold">
                       {breatheState === 'idle' && 'Focus'}
                       {breatheState === 'inhale' && `Inhale (${breatheCount})`}
                       {breatheState === 'hold' && 'Stillness'}
@@ -125,8 +118,8 @@ export default function HomeSanctuary() {
                 </div>
 
                 <div className="space-y-1">
-                  <h3 className="font-headline-sm text-[20px] text-[#1F1B18] font-serif">Somatic Breathing Pause</h3>
-                  <p className="font-body-sm text-[13px] text-[#4E4449] leading-relaxed">
+                  <h3 className="font-headline-sm text-[18px] sm:text-[20px] text-[#1F1B18] font-serif">Somatic Breathing Pause</h3>
+                  <p className="font-body-sm text-[12px] sm:text-[13px] text-[#4E4449] leading-relaxed">
                     Take one unhurried breath cycle to settle your resting heart rate.
                   </p>
                 </div>
@@ -134,7 +127,7 @@ export default function HomeSanctuary() {
                 <button
                   onClick={startBreathing}
                   disabled={breatheState !== 'idle'}
-                  className={`w-full py-3 rounded-full font-label-md text-[12px] uppercase tracking-wider transition-all duration-300 ${
+                  className={`w-full py-3 rounded-full font-label-md text-[11px] sm:text-[12px] uppercase tracking-wider transition-all duration-300 ${
                     breatheState !== 'idle'
                       ? 'bg-[#FBF1F5] text-[#704F62] opacity-80 cursor-wait'
                       : 'bg-[#57384A] text-white hover:bg-[#704F62] shadow-2xs'

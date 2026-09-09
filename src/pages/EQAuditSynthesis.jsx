@@ -4,15 +4,16 @@ import AudioPlayerWidget from '../components/AudioPlayerWidget';
 
 export default function EQAuditSynthesis() {
   const [loading, setLoading] = useState(true);
-  const [answers, setAnswers] = useState(null);
+  const [answers] = useState(() => {
+    try {
+      const stored = sessionStorage.getItem('soulfuli_audit_answers');
+      return stored ? JSON.parse(stored) : null;
+    } catch {
+      return null;
+    }
+  });
 
   useEffect(() => {
-    // Retrieve stored answers
-    const stored = sessionStorage.getItem('soulfuli_audit_answers');
-    if (stored) {
-      setAnswers(JSON.parse(stored));
-    }
-
     // Simulate 1.8s synthesis calculation
     const timer = setTimeout(() => {
       setLoading(false);

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HeaderNav from './components/HeaderNav';
 import MobileNavDrawer from './components/MobileNavDrawer';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 import HomeSanctuary from './pages/HomeSanctuary';
 import OurStory from './pages/OurStory';
 import WhySoulfulI from './pages/WhySoulfulI';
@@ -19,6 +20,7 @@ export default function App() {
 
   return (
     <Router>
+      <ScrollToTop />
       <div className="min-h-screen flex flex-col justify-between bg-surface text-on-surface antialiased">
         {/* Global Header Navigation */}
         <HeaderNav onOpenMobileMenu={() => setIsMobileMenuOpen(true)} />

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import PillTag from '../components/PillTag';
 
 export default function OurStory() {

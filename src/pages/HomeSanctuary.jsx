@@ -48,10 +48,10 @@ export default function HomeSanctuary() {
     <WatercolorBackground className="min-h-screen pt-20 flex flex-col">
       <div className="w-full max-w-max-width-canvas mx-auto px-gutter-mobile lg:px-gutter-desktop space-y-space-3xl pb-space-3xl">
 
-        {/* --------------------------------------------------
-            1. HERO SECTION (Matching Reference Composition)
-        -------------------------------------------------- */}
-        <section className="relative w-full rounded-2xl sm:rounded-[2.2rem] lg:rounded-[2.5rem] bg-[#FFF8F5]/40 p-4 sm:p-8 lg:p-12 mt-2 sm:mt-4 border border-[#E8E2DA]/50 backdrop-blur-[2px] overflow-hidden shadow-2xs">
+        <section className="relative w-full rounded-2xl sm:rounded-[2.2rem] lg:rounded-[2.5rem] bg-[url('/assets/soulfuli-hero.png')] bg-cover bg-center sm:bg-top bg-no-repeat p-4 sm:p-8 lg:p-12 mt-2 sm:mt-4 border border-[#E8E2DA]/60 overflow-hidden shadow-xs">
+          
+          {/* Subtle Contrast Tint Overlay */}
+          <div aria-hidden="true" className="absolute inset-0 bg-[#FFF8F5]/30 backdrop-blur-[1px] pointer-events-none z-0" />
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center relative z-10">
 

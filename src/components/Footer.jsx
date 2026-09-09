@@ -13,7 +13,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="w-full bg-surface-container border-t border-outline-variant/40 pt-space-3xl pb-space-2xl">
+    <footer className="w-full bg-[#FAF7F2] border-t border-gold-subtle/60 pt-space-3xl pb-space-2xl relative z-10">
       <div className="max-w-max-width-canvas mx-auto px-gutter-mobile lg:px-gutter-desktop">
         
         {/* Main Grid */}
@@ -22,13 +22,13 @@ export default function Footer() {
           {/* Brand Column (4 Cols) */}
           <div className="lg:col-span-4 space-y-space-md">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center border border-outline-variant/60">
+              <div className="w-10 h-10 rounded-full bg-parchment flex items-center justify-center border border-gold-subtle/60 shadow-2xs">
                 <span className="material-symbols-outlined text-primary text-[24px]">spa</span>
               </div>
-              <span className="font-headline-md text-headline-md text-on-surface font-serif">SoulfulI</span>
+              <span className="font-headline-md text-headline-md text-charcoal font-serif">SoulfulI</span>
             </div>
 
-            <p className="font-body-md text-body-md text-on-surface-variant max-w-sm leading-relaxed">
+            <p className="font-body-md text-body-md text-charcoal-muted max-w-sm leading-relaxed">
               A digital sanctuary for unhurried emotional inquiry, somatic presence, and quiet inwardness—borrowing the poetry of print publications.
             </p>
 
@@ -40,12 +40,12 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Sanctuary Links Column (2 Cols) */}
+          {/* Sanctuary Links Column (3 Cols) */}
           <div className="lg:col-span-3 space-y-space-md">
-            <h4 className="font-label-md text-label-md uppercase tracking-widest text-on-surface font-semibold">
+            <h4 className="font-label-md text-label-md uppercase tracking-widest text-charcoal font-semibold">
               The Sanctuary
             </h4>
-            <ul className="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant">
+            <ul className="space-y-space-sm font-body-sm text-body-sm text-charcoal-muted">
               <li>
                 <Link to="/" className="hover:text-primary transition-colors">The Sanctuary Home</Link>
               </li>
@@ -66,10 +66,10 @@ export default function Footer() {
 
           {/* Living Practices Column (2 Cols) */}
           <div className="lg:col-span-2 space-y-space-md">
-            <h4 className="font-label-md text-label-md uppercase tracking-widest text-on-surface font-semibold">
+            <h4 className="font-label-md text-label-md uppercase tracking-widest text-charcoal font-semibold">
               Practices
             </h4>
-            <ul className="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant">
+            <ul className="space-y-space-sm font-body-sm text-body-sm text-charcoal-muted">
               <li>
                 <Link to="/living-offerings/eq-audit" className="hover:text-primary transition-colors">EQ Audit</Link>
               </li>
@@ -90,17 +90,17 @@ export default function Footer() {
 
           {/* Newsletter Column (3 Cols) */}
           <div className="lg:col-span-3 space-y-space-md">
-            <h4 className="font-label-md text-label-md uppercase tracking-widest text-on-surface font-semibold">
+            <h4 className="font-label-md text-label-md uppercase tracking-widest text-charcoal font-semibold">
               Sanctuary Monograph
             </h4>
-            <p className="font-body-sm text-body-sm text-on-surface-variant">
+            <p className="font-body-sm text-body-sm text-charcoal-muted">
               Receive our quiet monthly letter on somatic inquiry and emotional stillness.
             </p>
 
             {subscribed ? (
-              <div className="p-space-md rounded-2xl bg-surface-container-high border border-outline-variant/60 text-primary font-body-sm">
+              <div className="p-space-md rounded-2xl bg-parchment border border-gold-subtle/60 text-primary font-body-sm">
                 <p className="font-medium font-serif italic text-[16px]">You are now welcomed into the circle.</p>
-                <p className="text-[12px] text-on-surface-variant mt-1">Look for our monthly monograph in your inbox.</p>
+                <p className="text-[12px] text-charcoal-muted mt-1">Look for our monthly monograph in your inbox.</p>
               </div>
             ) : (
               <form onSubmit={handleSubscribe} className="space-y-space-xs">
@@ -110,11 +110,11 @@ export default function Footer() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Enter your email address..."
-                  className="w-full bg-surface border border-outline-variant/60 rounded-xl px-4 py-2.5 font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:border-secondary transition-colors"
+                  className="w-full bg-parchment border border-gold-subtle/60 rounded-xl px-4 py-2.5 font-body-sm text-body-sm text-charcoal placeholder:text-outline focus:outline-none focus:border-secondary transition-colors"
                 />
                 <button
                   type="submit"
-                  className="w-full py-2.5 rounded-full bg-primary-container text-on-primary font-body-sm font-medium hover:bg-primary transition-colors shadow-sm"
+                  className="w-full py-2.5 rounded-full bg-primary-container text-on-primary font-body-sm font-medium hover:bg-primary transition-colors shadow-2xs"
                 >
                   Receive Letter
                 </button>
@@ -125,7 +125,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Hairline & Legal Bar */}
-        <div className="pt-space-lg border-t border-outline-variant/40 flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant font-body-sm text-[13px]">
+        <div className="pt-space-lg border-t border-gold-subtle/60 flex flex-col md:flex-row items-center justify-between gap-space-md text-charcoal-muted font-body-sm text-[13px]">
           <p>© 2026 SoulfulI Sanctuary. All rights reserved. Unhurried by design.</p>
           <div className="flex items-center gap-space-lg">
             <Link to="/our-story" className="hover:text-primary transition-colors">Privacy Principles</Link>
